@@ -44,6 +44,9 @@ export default {
                 }, {
                     path: 'tabs',
                     title: 'tabs标签',
+                }, {
+                    path: 'sidebar',
+                    title: 'Sidebar 侧边导航',
                 }],
             },
         ],
