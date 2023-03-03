@@ -7,10 +7,12 @@
 ### 引入
 
 ```js
-import Vue from 'vue';
-import { tabs } from 'vant-cli-demo1';
+import { createApp } from 'vue'
+import App from './App.vue'
+import { Tabs } from 'vant-cli-demo1';
 
-Vue.use(tabs);
+const app = createApp(App)
+app.use(Tabs);
 ```
 
 ## 代码演示

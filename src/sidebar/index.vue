@@ -1,13 +1,13 @@
 <template>
-    <div class="tabs-box">
-        <div class="tabs-father" ref="tfDom">
-            <div  v-for="item,index in items" @click="!item.disabled ? selected(index):''" class="tabs" :class="{act:isShow == index,tabsdisabled:item.disabled }"> 
+    <div class="sidebar-box">
+        <div class="sidebar-father" ref="tfDom">
+            <div  v-for="item,index in items" @click="!item.disabled ? selected(index):''" class="sidebar" :class="{act1:isShow == index,sidebardisabled:item.disabled }"> 
                 
                 <span>{{item.title}}</span>
-                <div v-show="isShow == index" class="color-box"></div>
+                <div v-show="isShow == index" class="sidebar-color-box"></div>
             </div>
         </div>
-        <div ref="ctDom" class="content">
+        <div ref="ctDom" class="sidebar-content">
             <div v-for="item,index in items" v-show="isShow == index">{{item.content}}</div>
         </div>
         
@@ -77,21 +77,21 @@
 </script>
 
 <style scoped lang="less">
-    .tabs-box {
+    .sidebar-box {
         display: flex;
         background-color: #F5F5F5;
         align-items: flex-start;
-        .tabs-father {
+        .sidebar-father {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             background-color: #F5F5F5;
             color: black;
-            .tabsdisabled {
+            .sidebardisabled {
                 opacity: 0.2;
                 color: green !important;
             }
-            .tabs {
+            .sidebar {
                 display: inline-block;
                 min-width: 80px;
                 font-size: 16px;
@@ -103,7 +103,7 @@
                 max-width: 100px;
                 max-height: 36px;
                 position: relative;
-                .color-box {
+                .sidebar-color-box {
                     width: 3px;
                     height: 15px;
                     background-color: red;
@@ -113,11 +113,11 @@
                     transform: translateY(-50%);
                 }
             }
-            .act {
+            .act1 {
                 background-color: white !important;
             }
         }
-        .content {
+        .sidebar-content {
             width: 100%;
             height: 300px;
             padding: 10px 20px;

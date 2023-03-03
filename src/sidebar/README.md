@@ -7,10 +7,12 @@
 ### 引入
 
 ```js
-import Vue from 'vue';
-import { sidebar } from 'vant-cli-demo1';
+import { createApp } from 'vue'
+import App from './App.vue'
+import { Sidebar } from 'vant-cli-demo1';
 
-Vue.use(sidebar);
+const app = createApp(App)
+app.use(Sidebar);
 ```
 
 ## 代码演示
@@ -18,7 +20,7 @@ Vue.use(sidebar);
 ### 基础用法
 
 ```html
-<sidebar :items="items"></sidebar>
+<Sidebar :items="items"></Sidebar>
 ```
 ```js
 Page({
@@ -46,19 +48,19 @@ Page({
 ### 胶囊标签
 
 ```html
-<sidebar :items="items" type="capsule"></sidebar>
+<Sidebar :items="items" type="capsule"></Sidebar>
 ```
 ### 点击事件
 
 点击标签时会触发onChange事件
 ```html
-<sidebar :items="items" :onChange="onChange"></sidebar>
+<Sidebar :items="items" :onChange="onChange"></Sidebar>
 ```
 ### 高度设置
 
 点击标签时会触发onChange事件
 ```html
-<sidebar :items="items" hetght="600px"></sidebar>
+<Sidebar :items="items" hetght="600px"></Sidebar>
 ```
 ### 禁用状态
 
