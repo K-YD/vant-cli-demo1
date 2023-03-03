@@ -20,7 +20,7 @@ app.use(Sidebar);
 ### 基础用法
 
 ```html
-<Sidebar :items="items"></Sidebar>
+<sidebar :items="items"></sidebar>
 ```
 ```js
 Page({
@@ -48,19 +48,19 @@ Page({
 ### 胶囊标签
 
 ```html
-<Sidebar :items="items" type="capsule"></Sidebar>
+<sidebar :items="items" type="capsule"></sidebar>
 ```
 ### 点击事件
 
 点击标签时会触发onChange事件
 ```html
-<Sidebar :items="items" :onChange="onChange"></Sidebar>
+<sidebar :items="items" :onChange="onChange"></sidebar>
 ```
 ### 高度设置
 
 点击标签时会触发onChange事件
 ```html
-<Sidebar :items="items" hetght="600px"></Sidebar>
+<sidebar :items="items" hetght="600px"></sidebar>
 ```
 ### 禁用状态
 
