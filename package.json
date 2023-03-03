@@ -1,6 +1,6 @@
 {
   "name": "vant-cli-demo1",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "lib/vant-cli-demo1.js",
   "module": "es/index.js",
